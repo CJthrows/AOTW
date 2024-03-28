@@ -1,1 +1,60 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+    background-color: #008cb4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    width: 100px; 
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    overflow: hidden;
+}
+
+.collage img {
+    max-width: 200%;
+    max-height: 100%;
+    display: none;
+    width: 50%; 
+    height: auto;
+}
+
+.collage img.active {
+    display: block;
+}
 
