@@ -3,58 +3,107 @@ html {
   width: 100%;
 }
 
+body {
+  background-color: #9cd7ff; 
+}
+
+
 header {
-    background-color: #008cb4;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #008cb4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px; 
+  margin: 0 auto;
+  font-size: 20px;
 }
 
 nav {
-    width: 100px; 
-    background-color: #f4f4f4;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
+  width: 100px; 
+  background-color: #f4f4f4;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
+nav ul li {
+  margin-bottom: 30px; 
+}
+
+
 a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
 .collage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  overflow: hidden;
 }
 
 .collage img {
-    max-width: 200%;
-    max-height: 100%;
-    display: none;
-    width: 50%; 
-    height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  width: 40%; 
+  height: auto;
 }
 
 .collage img.active {
-    display: block;
+  display: block;
 }
+
+.collage {
+  position: relative;
+  height: 80vh; 
+  overflow: hidden;
+}
+
+.collage .controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 200px;
+  box-sizing: border-box;
+}
+
+.collage .controls button {
+  background: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  border: 2px solid black;
+}
+
+.collage .controls button:hover {
+  color: #007bff;
+}
+
 
