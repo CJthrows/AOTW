@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -21,16 +22,86 @@
 </header>
 
   
-<nav>
-  <ul>
-    <li><a href="page1.html">About </a></li>
-    <li><a href="page2.html">Experience</a></li>
-    <li><a href="page3.html">Education</a></li>
-    <li><a href="page4.html">Awards</a></li>
-    <li><a href="page5.html">Skills</a></li>
-    <li><a href="page6.html">Projects</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><button onclick="showPage('about')">About</button></li>
+      <li><button onclick="showPage('experience')">Experience</button></li>
+      <li><button onclick="showPage('education')">Education</button></li>
+      <li><button onclick="showPage('awards')">Awards</button></li>
+      <li><button onclick="showPage('skills')">Skills</button></li>
+      <li><button onclick="showPage('projects')">Projects</button></li>
+      <li><button onclick="showHomePage()">Home</button></li>
+    </ul>
+  </nav>
+
+<div id="aboutPage" class="page">
+  About
+    <p></p>
+  Currently enrolled in Southern Virginia University and apart of the Universites Track Team.
+    <p></p>
+  Built my own car in highschool and started a buissnes with my dad.
+</div>
+
+<div id="experiencePage" class="page" style="display: none;">
+  EXPERIENCE
+    <p></p>
+  Urban Necessities, Las Vegas, Nevada — Business Development Manager
+  March 2021 - August 2021
+  -Organizing product
+  -Communicating with customers 
+  -Professionalism
+    <p></p>
+  B&C Motors, Las Vegas, Nevada — Marketing Manager 
+  January 2020 - August 2022
+  -Marketing strategies
+  -Promoting products
+  -Mechanical Maintenance 
+</div>
+
+<div id="educationPage" class="page" style="display: none;">
+  EDUCATION
+    <p></p>
+  Liberty High School, Clark County, Las Vegas — High School diploma
+  August 2018 - June 2022
+  All honors student
+  Varsity Track and Field 
+    <p></p>
+  Southern Virginia University, Buena Vista, Virginia — Bachelor of Science 
+  August 2022 - Present - expected graduation May 2026
+  Computer Science major
+</div>
+
+<div id="awardsPage" class="page" style="display: none;"> 
+  AWARDS
+    <p></p>
+  All Honor Graduate in High School, 3.5 GPA, four AP classes
+    <p></p>
+  3x NCAA USA South Conference Track and Field champion
+    <p></p>
+  2x National Champion, In Track and Field discus throw
+    <p></p>
+  Junior Olympian in 2020, qualified to be a AAU junior Olympian in Track and Field
+</div>
+
+<div id="skillsPage" class="page" style="display: none;"> 
+  SKILLS
+    <p></p>
+  -  Confident in HTML, CSS, JavaScript, Python and Linux 
+    <p></p>
+  - Detailed-orientated with accuracy and consistency
+    <p></p>
+  - Mechanically competent
+    <p></p>
+  - Interpersonal skills
+</div>
+
+  <div id="projectsPage" class="page" style="display: none;">
+Projects
+    <p></p>
+    Extensive project with peers undergoing reorganization of product
+    </div>
+
+
 
   
   <div class="collage">
